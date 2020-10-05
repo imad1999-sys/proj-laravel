@@ -15,6 +15,12 @@ return [
 
     'offerNameRequired' => 'this field required',
     'priceRequired'=>'this field required',
-    'priceNumeric'=>'this field must be numeric'
+    'priceNumeric'=>'this field must be numeric',
+    'addYourOffer'=>'Add Your Offer',
+    'offerName'=>'Offer Name',
+    'offerPrice'=>'Offer Price',
+    'storeOffer'=>'Store Offer',
+    'ID' => 'ID',
+    'offerNameAr'=>'Offer Name Arabic'
 
 ];

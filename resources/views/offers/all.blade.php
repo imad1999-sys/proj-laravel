@@ -88,45 +88,26 @@
             </form>
         </div>
     </nav>
-        <div class="flex-center position-ref full-height">
-            <div class="content">
-                <div class="title m-b-md"style="font-family: 'Baloo Paaji 2', cursive;">
-                    {{__('messages.addYourOffer')}}
-                </div>
-                @if(\Illuminate\Support\Facades\Session::has('success'))
-                <div class="alert alert-success" role="alert" style="font-family: 'Baloo Tammudu 2', cursive;">
-                    {{\Illuminate\Support\Facades\Session::get('success')}}
-                </div>
-                @endif
-                <br>
-                <form method="POST" action="{{route('offers.store')}}">
-                    @csrf
-                    <div class="form-group">
-                        <label for="exampleInputEmail1" style="font-family: 'Baloo Tammudu 2', cursive;">{{__('messages.offerName')}}</label>
-                        <input type="text" class="form-control" name="name_en" placeholder="Enter the Name" style="font-family: 'Baloo Tammudu 2', cursive;">
-                        @error('name_en')
-                        <small class="form-text text-danger" style="font-family: 'Baloo Tammudu 2', cursive;">{{$message}}</small>
-                        @enderror
-                    </div>
 
-                    <div class="form-group">
-                        <label for="exampleInputEmail1" style="font-family: 'Baloo Tammudu 2', cursive;">{{__('messages.offerNameAr')}}</label>
-                        <input type="text" class="form-control" name="name_ar" placeholder="Enter the Name" style="font-family: 'Baloo Tammudu 2', cursive;">
-                        @error('name_ar')
-                        <small class="form-text text-danger" style="font-family: 'Baloo Tammudu 2', cursive;">{{$message}}</small>
-                        @enderror
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1" style="font-family: 'Baloo Tammudu 2', cursive;">{{__('messages.offerPrice')}}</label>
-                        <input type="text" class="form-control" name="price" placeholder="Enter the Price" style="font-family: 'Baloo Tammudu 2', cursive;">
-                        @error('price')
-                        <small class="form-text text-danger" style="font-family: 'Baloo Tammudu 2', cursive;">{{$message}}</small>
-                        @enderror
-                    </div>
-                    <button type="submit" class="btn btn-primary" style="font-family: 'Baloo Tammudu 2', cursive;">{{__('messages.storeOffer')}}</button>
-                </form>
-            </div>
-        </div>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">{{__('messages.ID')}}</th>
+            <th scope="col">{{__('messages.offerName')}}</th>
+            <th scope="col">{{__('messages.offerPrice')}}</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach($offers as $offer)
+        <tr>
+            <th scope="row">{{$offer -> id}}</th>
+            <td>{{$offer -> name}}</td>
+            <td>{{$offer -> price}}</td>
+        </tr>
+        @endforeach
+        </tbody>
+    </table>
+
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

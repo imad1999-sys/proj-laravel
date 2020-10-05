@@ -15,6 +15,11 @@ return [
 
     'offerNameRequired' => 'هذا الحقل مطلوب',
     'priceRequired'=>'هذا الحقل مطلوب',
-    'priceNumeric'=>'هذا الحقل يجب أن يكون رقم'
-
+    'priceNumeric'=>'هذا الحقل يجب أن يكون رقم',
+    'addYourOffer'=>'إضافة عرض جديد',
+    'offerName'=>'إسم العرض',
+    'offerPrice'=>'سعر العرض',
+    'storeOffer'=>'تخزين العرض',
+    'ID' => 'معرف العرض',
+    'offerNameAr' => 'اسم العرض بالعربي'
 ];

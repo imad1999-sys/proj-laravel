@@ -30,7 +30,8 @@ Route::group(
     ], function(){
     Route::group(['prefix' => 'offers'],function(){
         Route::get('create','CrudController@create');
+        Route::post('store','CrudController@store')->name('offers.store');
+        Route::get('all','CrudController@getAllOffers');
     });
-    Route::post('store','CrudController@store')->name('offers.store');
 });
 
