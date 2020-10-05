@@ -43,9 +43,9 @@ class CrudController extends Controller
     }
     public function getMessages(){
         return $messages = [
-            'name.required'=>'this field required',
-            'price.required'=>'this field required',
-            'price.numeric'=>'this field must be numeric'
+            'name.required'=>__('messages.offerNameRequired'),
+            'price.required'=>__('messages.priceRequired'),
+            'price.numeric'=>__('messages.priceNumeric')
         ];
     }
 }
