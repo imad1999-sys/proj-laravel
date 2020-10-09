@@ -31,7 +31,27 @@ Route::group(
     Route::group(['prefix' => 'offers'],function(){
         Route::get('create','CrudController@create');
         Route::post('store','CrudController@store')->name('offers.store');
-        Route::get('all','CrudController@getAllOffers');
+
+        Route::get('edit/{offer_id}','CrudController@editOffers');
+        Route::post('update/{offer_id}','CrudController@updateOffer')->name('offers.update');
+
+        Route::get('all','CrudController@getAllOffers')->name('offers.all');
+        Route::get('youtube','CrudController@getVideo');
+        Route::get('delete/{offer_id}','CrudController@deleteOffer')->name('offers.delete');
     });
 });
+
+
+/// Begin Ajax Routes
+Route::group(
+    [
+        'prefix' => LaravelLocalization::setLocale(),
+        'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
+    ], function(){
+    Route::group(['prefix' => 'ajax-offers'],function(){
+        Route::get('create','OfferController@createOffer');
+        Route::post('save','OfferController@saveOffer')-> name('ajax.offers.store');
+    });
+});
+/// End Ajax Routes
 

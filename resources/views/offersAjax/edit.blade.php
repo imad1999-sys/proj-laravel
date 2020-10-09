@@ -88,38 +88,44 @@
             </form>
         </div>
     </nav>
-    @if(\Illuminate\Support\Facades\Session::get('success'))
-        <div class="alert alert-success" role="alert">
-            {{Session::get('success')}}
+        <div class="flex-center position-ref full-height">
+            <div class="content">
+                <div class="title m-b-md"style="font-family: 'Baloo Paaji 2', cursive;">
+                    {{__('messages.editYourOffer')}}
+                </div>
+                @if(\Illuminate\Support\Facades\Session::has('success'))
+                <div class="alert alert-success" role="alert" style="font-family: 'Baloo Tammudu 2', cursive;">
+                    {{\Illuminate\Support\Facades\Session::get('success')}}
+                </div>
+                @endif
+                <br>
+                <form method="POST" action="{{route('offers.update',$offer->id)}}" enctype="multipart/form-data">
+                    @csrf
+                    <div class="form-group">
+                        <label for="exampleInputEmail1" style="font-family: 'Baloo Tammudu 2', cursive;">{{__('messages.offerPhoto')}}</label>
+                        <input type="text" class="form-control" name="photo" >
+                        @error('photo')
+                        <small class="form-text text-danger" style="font-family: 'Baloo Tammudu 2', cursive;">{{$message}}</small>
+                        @enderror
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1" style="font-family: 'Baloo Tammudu 2', cursive;">{{__('messages.offerName')}}</label>
+                        <input type="text" class="form-control" name="name" value="{{$offer -> name}}" placeholder="Enter the Name" style="font-family: 'Baloo Tammudu 2', cursive;">
+                        @error('name')
+                        <small class="form-text text-danger" style="font-family: 'Baloo Tammudu 2', cursive;">{{$message}}</small>
+                        @enderror
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1" style="font-family: 'Baloo Tammudu 2', cursive;">{{__('messages.offerPrice')}}</label>
+                        <input type="text" class="form-control" name="price" value="{{$offer -> price}}" placeholder="Enter the Price" style="font-family: 'Baloo Tammudu 2', cursive;">
+                        @error('price')
+                        <small class="form-text text-danger" style="font-family: 'Baloo Tammudu 2', cursive;">{{$message}}</small>
+                        @enderror
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="font-family: 'Baloo Tammudu 2', cursive;">{{__('messages.storeOffer')}}</button>
+                </form>
+            </div>
         </div>
-        @endif
-    @if(\Illuminate\Support\Facades\Session::get('error'))
-        <div class="alert alert-danger" role="alert">
-            {{Session::get('error')}}
-        </div>
-        @endif
-    <table class="table table-striped">
-        <thead>
-        <tr>
-            <th scope="col">{{__('messages.ID')}}</th>
-            <th scope="col">{{__('messages.offerName')}}</th>
-            <th scope="col">{{__('messages.offerPrice')}}</th>
-            <th scope="col">{{__('messages.operation')}}</th>
-        </tr>
-        </thead>
-        <tbody>
-        @foreach($offers as $offer)
-        <tr>
-            <th scope="row">{{$offer -> id}}</th>
-            <td>{{$offer -> name}}</td>
-            <td>{{$offer -> price}}</td>
-            <td><a href="{{url('offers/edit/'.$offer -> id)}}" type="button" class="btn btn-dark">{{__('messages.update')}}</a></td>
-            <td><a href="{{url('offers/delete/'.$offer -> id)}}" type="button" class="btn btn-danger">{{__('messages.delete')}}</a></td>
-        </tr>
-        @endforeach
-        </tbody>
-    </table>
-
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

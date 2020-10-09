@@ -21,6 +21,15 @@ return [
     'offerPrice'=>'Offer Price',
     'storeOffer'=>'Store Offer',
     'ID' => 'ID',
-    'offerNameAr'=>'Offer Name Arabic'
+    'offerNameAr'=>'Offer Name Arabic',
+    'operation'=>'operation',
+    'update'=>'update',
+    'editYourOffer' => 'Edit Your Offer',
+    'offerPhoto'=> 'Offer Photo',
+    'delete' => 'Delete',
+    'errorOffer' => 'Offer not exist',
+    'offerDeletedSuccessfully'=> 'Offer Deleted Successfully',
+    'offerSavedSuccessfully'=>'Offer Saved Successfully',
+    'Failed'=>'Saving Failed',
 
 ];

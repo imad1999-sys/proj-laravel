@@ -21,5 +21,14 @@ return [
     'offerPrice'=>'سعر العرض',
     'storeOffer'=>'تخزين العرض',
     'ID' => 'معرف العرض',
-    'offerNameAr' => 'اسم العرض بالعربي'
+    'offerNameAr' => 'اسم العرض بالعربي',
+    'operation'=>'العملية',
+    'update'=>'تحديث',
+    'editYourOffer' => 'تحديث معلومات العرض',
+    'offerPhoto' => 'صورة العرض',
+    'delete' => 'حذف',
+    'errorOffer'=> 'العرض غير موجود',
+    'offerDeletedSuccessfully'=>'تم حذف العرض بنجاح',
+    'offerSavedSuccessfully'=>'تم حفظ العرض بنجاح',
+    'Failed'=>'فشل في الحفظ',
 ];

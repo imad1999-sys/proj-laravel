@@ -32,7 +32,6 @@ class OfferRequest extends FormRequest
     {
         return [
             'name.required'=>__('messages.offerNameRequired'),
-            'name_ar.required'=>__('messages.offerNameRequired'),
             'price.required'=>__('messages.priceRequired'),
             'price.numeric'=>__('messages.priceNumeric')
         ];

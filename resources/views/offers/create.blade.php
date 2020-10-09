@@ -99,20 +99,19 @@
                 </div>
                 @endif
                 <br>
-                <form method="POST" action="{{route('offers.store')}}">
+                <form method="POST" action="{{route('offers.store')}}" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
-                        <label for="exampleInputEmail1" style="font-family: 'Baloo Tammudu 2', cursive;">{{__('messages.offerName')}}</label>
-                        <input type="text" class="form-control" name="name_en" placeholder="Enter the Name" style="font-family: 'Baloo Tammudu 2', cursive;">
-                        @error('name_en')
+                        <label for="exampleInputEmail1" style="font-family: 'Baloo Tammudu 2', cursive;">{{__('messages.offerPhoto')}}</label>
+                        <input type="file" class="form-control" name="photo">
+                        @error('photo')
                         <small class="form-text text-danger" style="font-family: 'Baloo Tammudu 2', cursive;">{{$message}}</small>
                         @enderror
                     </div>
-
                     <div class="form-group">
-                        <label for="exampleInputEmail1" style="font-family: 'Baloo Tammudu 2', cursive;">{{__('messages.offerNameAr')}}</label>
-                        <input type="text" class="form-control" name="name_ar" placeholder="Enter the Name" style="font-family: 'Baloo Tammudu 2', cursive;">
-                        @error('name_ar')
+                        <label for="exampleInputEmail1" style="font-family: 'Baloo Tammudu 2', cursive;">{{__('messages.offerName')}}</label>
+                        <input type="text" class="form-control" name="name" placeholder="Enter the Name" style="font-family: 'Baloo Tammudu 2', cursive;">
+                        @error('name')
                         <small class="form-text text-danger" style="font-family: 'Baloo Tammudu 2', cursive;">{{$message}}</small>
                         @enderror
                     </div>
