@@ -26,7 +26,7 @@
                 <th scope="row">{{$offer -> id}}</th>
                 <td>{{$offer -> name}}</td>
                 <td>{{$offer -> price}}</td>
-                <td><a href="{{url('offers/edit/'.$offer -> id)}}" type="button" class="btn btn-dark">{{__('messages.update')}}</a></td>
+                <td><a href="{{route('ajax.offers.edit',$offer->id)}}" type="button" class="btn btn-dark">{{__('messages.update')}}</a></td>
                 <td><a href="" offer_id="{{$offer -> id}}" type="button" class="deleteButton btn btn-danger">{{__('messages.delete')}}</a></td>
             </tr>
         @endforeach

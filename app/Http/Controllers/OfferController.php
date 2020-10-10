@@ -40,4 +40,29 @@ class OfferController extends Controller
             'id'=>$request ->id
         ]);
     }
+    public function editOffers(Request  $request){
+        $offer = Offer::find($request -> offer_id);
+        if(!$offer){
+            return response() -> json([
+                'status' => false,
+                'msg' => __('messages.offerNotExist'),
+            ]);
+        }
+        $offer = Offer::select('id','name','price')->find($request -> offer_id);
+        return view('offersAjax.edit',compact('offer'));
+    }
+    public function updateOffer(Request $request){
+        $offer = Offer::find($request -> id);
+        if(!$offer){
+            return response() -> json([
+                'status' => false,
+                'msg' => __('messages.offerNotExist'),
+            ]);
+        }
+        $offer -> update($request -> all());
+        return response() -> json([
+            'status' => true,
+            'msg' => __('messages.offerSavedSuccessfully')
+        ]);
+    }
 }

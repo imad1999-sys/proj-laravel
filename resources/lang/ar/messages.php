@@ -31,4 +31,5 @@ return [
     'offerDeletedSuccessfully'=>'تم حذف العرض بنجاح',
     'offerSavedSuccessfully'=>'تم حفظ العرض بنجاح',
     'Failed'=>'فشل في الحفظ',
+    'offerNotExist' => 'العرض غير موجود'
 ];

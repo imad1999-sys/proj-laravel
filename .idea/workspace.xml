@@ -22,7 +22,10 @@
     <list default="true" id="79bf5033-312e-4261-8da0-ec325ef86b9c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OfferController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OfferController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/messages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/messages.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/offersAjax/all.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/offersAjax/all.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/offersAjax/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/offersAjax/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -193,7 +196,8 @@
       <workItem from="1602084336697" duration="4411000" />
       <workItem from="1602240811063" duration="4993000" />
       <workItem from="1602255161910" duration="5765000" />
-      <workItem from="1602315602347" duration="5582000" />
+      <workItem from="1602315602347" duration="8055000" />
+      <workItem from="1602335396661" duration="2921000" />
     </task>
     <servers />
   </component>

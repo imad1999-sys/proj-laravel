@@ -31,5 +31,6 @@ return [
     'offerDeletedSuccessfully'=> 'Offer Deleted Successfully',
     'offerSavedSuccessfully'=>'Offer Saved Successfully',
     'Failed'=>'Saving Failed',
+    'offerNotExist' => 'Offer Not Exsist'
 
 ];
