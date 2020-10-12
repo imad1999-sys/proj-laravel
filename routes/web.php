@@ -36,7 +36,7 @@ Route::group(
         Route::post('update/{offer_id}','CrudController@updateOffer')->name('offers.update');
 
         Route::get('all','CrudController@getAllOffers')->name('offers.all');
-        Route::get('youtube','CrudController@getVideo');
+        Route::get('youtube','CrudController@getVideo')->middleware('auth');
         Route::get('delete/{offer_id}','CrudController@deleteOffer')->name('offers.delete');
     });
 });
@@ -60,4 +60,18 @@ Route::group(
     });
 });
 /// End Ajax Routes
+
+/// Start Authentication
+    Route::get('adult','Auth\CustomAuthController@adult')->middleware('CheckAge');
+/// End Authentication
+///
+///   ######### Begin Relations Routes #########
+  Route::get('has-one','Relation\RelationsController@hasOneRelation');
+  Route::get('has-one-reverse','Relation\RelationsController@hasOneRelationReverse');
+  Route::get('get-users-has-phone','Relation\RelationsController@getUsersHasPhone');
+  Route::get('get-users-not-has-phone','Relation\RelationsController@getUsersNotHasPhone');
+
+  ########## One To Many #########
+Route::get('hospital-to-many','Relation\RelationsController@getHospitalDoctors');
+//    ######### End Relations Routes ##########
 

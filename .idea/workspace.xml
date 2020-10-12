@@ -21,11 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="79bf5033-312e-4261-8da0-ec325ef86b9c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OfferController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OfferController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/offersAjax/all.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/offersAjax/all.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/offersAjax/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/offersAjax/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Listeners/IncreaseCounter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Listeners/IncreaseCounter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -153,20 +151,22 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/customAuth" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\LL\app\Models" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\LL\resources\views\customAuth" />
       <recent name="C:\wamp64\www\LL\resources\views" />
       <recent name="C:\wamp64\www\LL\resources\views\offers" />
       <recent name="C:\wamp64\www\LL\resources\lang\ar" />
       <recent name="C:\wamp64\www\LL\resources\views\email" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\LL\app\Http\Controllers\Auth" />
+      <recent name="C:\wamp64\www\LL\app\Models" />
     </key>
   </component>
   <component name="RunManager">
@@ -198,6 +198,11 @@
       <workItem from="1602255161910" duration="5765000" />
       <workItem from="1602315602347" duration="8055000" />
       <workItem from="1602335396661" duration="2921000" />
+      <workItem from="1602339892225" duration="2795000" />
+      <workItem from="1602400072847" duration="613000" />
+      <workItem from="1602430768364" duration="3676000" />
+      <workItem from="1602485659910" duration="3036000" />
+      <workItem from="1602491890417" duration="1564000" />
     </task>
     <servers />
   </component>
