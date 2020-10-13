@@ -73,5 +73,10 @@ Route::group(
 
   ########## One To Many #########
 Route::get('hospital-to-many','Relation\RelationsController@getHospitalDoctors');
+Route::get('hospitals','Relation\RelationsController@getHospitals');
+Route::get('doctors/{hospital_id}','Relation\RelationsController@getDoctors')->name('hospital.doctors');
+Route::get('hospital_has_doctors','Relation\RelationsController@getHospitalsHasDoctors');
+Route::get('hospitals_has_doctors_male','Relation\RelationsController@getHospitalsHasDoctorsMale');
+Route::get('hospitals_not_have_doctors','Relation\RelationsController@getHospitalsNotHaveDoctor');
 //    ######### End Relations Routes ##########
 

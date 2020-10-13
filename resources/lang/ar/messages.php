@@ -31,5 +31,11 @@ return [
     'offerDeletedSuccessfully'=>'تم حذف العرض بنجاح',
     'offerSavedSuccessfully'=>'تم حفظ العرض بنجاح',
     'Failed'=>'فشل في الحفظ',
-    'offerNotExist' => 'العرض غير موجود'
+    'offerNotExist' => 'العرض غير موجود',
+    'doctorTitle' => 'الدكاترة',
+    'name' => 'اسم الدكتور',
+    'title'=>'الاختصاص',
+    'hospital_ID'=>'رقم المشفى',
+    'nameOfHospital' => 'إسم المشفى',
+    'address' => 'عنوان المشفى'
 ];

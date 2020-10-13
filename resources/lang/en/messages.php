@@ -31,6 +31,13 @@ return [
     'offerDeletedSuccessfully'=> 'Offer Deleted Successfully',
     'offerSavedSuccessfully'=>'Offer Saved Successfully',
     'Failed'=>'Saving Failed',
-    'offerNotExist' => 'Offer Not Exsist'
+    'offerNotExist' => 'Offer Not Exsist',
+    'doctorTitle' => 'Doctors',
+    'name' => 'Name',
+    'title'=>'Title',
+    'hospital_ID'=>'Hospital ID',
+    'hospitalTitle'=>'Hospitals',
+    'nameOfHospital'=>'Name Of Hospital',
+    'address' => 'Hospital Address',
 
 ];
